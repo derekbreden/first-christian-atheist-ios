@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstChristianAtheist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="PHY-vp-dMl" userLabel="Webview View">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p0s-Fg-eGP" userLabel="Splash Background">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                        <subviews>
+                                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="DIO-mU-n27" userLabel="Loading View">
+                                                <rect key="frame" x="45" y="272" width="300" height="300"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="4oa-LZ-pgs">
+                                                        <rect key="frame" x="75" y="75" width="150" height="150"/>
+                                                        <color key="tintColor" systemColor="secondarySystemFillColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="45y-df-Ud5"/>
+                                                            <constraint firstAttribute="height" constant="150" id="fDG-sa-ryO"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.10000000000000001" id="xSD-dq-HF9">
+                                                        <rect key="frame" x="102" y="261" width="100" height="12"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
+                                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </progressView>
+                                                    <imageView hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi.slash" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TpV-I7-c6z">
+                                                        <rect key="frame" x="138.66666666666666" y="224.33333333333334" width="22.666666666666657" height="19.666666666666657"/>
+                                                        <color key="tintColor" systemColor="secondaryLabelColor"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="a0B-Gx-0cO"/>
+                                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                                <constraints>
+                                                    <constraint firstItem="4oa-LZ-pgs" firstAttribute="centerX" secondItem="DIO-mU-n27" secondAttribute="centerX" id="30G-vL-FxR"/>
+                                                    <constraint firstItem="TpV-I7-c6z" firstAttribute="centerY" secondItem="DIO-mU-n27" secondAttribute="centerY" constant="85" id="E9O-tu-c24"/>
+                                                    <constraint firstAttribute="height" constant="300" id="LGW-DQ-QaK"/>
+                                                    <constraint firstItem="TpV-I7-c6z" firstAttribute="centerX" secondItem="DIO-mU-n27" secondAttribute="centerX" id="Lgp-BT-Ba4"/>
+                                                    <constraint firstAttribute="width" constant="300" id="tRK-vW-ECZ"/>
+                                                    <constraint firstItem="4oa-LZ-pgs" firstAttribute="centerY" secondItem="DIO-mU-n27" secondAttribute="centerY" id="yhE-i5-AsM"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="DIO-mU-n27" firstAttribute="centerY" secondItem="p0s-Fg-eGP" secondAttribute="centerY" id="LYj-7S-cHj"/>
+                                            <constraint firstItem="DIO-mU-n27" firstAttribute="centerX" secondItem="p0s-Fg-eGP" secondAttribute="centerX" id="y8r-Wa-yhy"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="p0s-Fg-eGP" firstAttribute="top" secondItem="PHY-vp-dMl" secondAttribute="top" id="Ea6-vO-PU8"/>
+                                    <constraint firstItem="p0s-Fg-eGP" firstAttribute="centerX" secondItem="PHY-vp-dMl" secondAttribute="centerX" id="XTn-FW-aq9"/>
+                                    <constraint firstItem="p0s-Fg-eGP" firstAttribute="centerY" secondItem="PHY-vp-dMl" secondAttribute="centerY" id="cHj-Fu-FDq"/>
+                                    <constraint firstItem="p0s-Fg-eGP" firstAttribute="leading" secondItem="PHY-vp-dMl" secondAttribute="leading" id="oes-f1-Seg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="connectionProblemView" destination="TpV-I7-c6z" id="76F-WR-UnJ"/>
+                        <outlet property="loadingView" destination="DIO-mU-n27" id="Wlk-Yd-6b1"/>
+                        <outlet property="progressView" destination="xSD-dq-HF9" id="0jL-XR-Xwq"/>
+                        <outlet property="webviewView" destination="PHY-vp-dMl" id="qhH-E4-3lf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036.9230769230769" y="135.07109004739337"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchIcon" width="85.333335876464844" height="85.333335876464844"/>
+        <image name="wifi.slash" catalog="system" width="128" height="111"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
